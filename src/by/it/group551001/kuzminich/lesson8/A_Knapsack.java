@@ -57,7 +57,9 @@ public class A_Knapsack {
                 if (curr_weight <= i){
                     int new_weight = curr_weight + best[i-curr_weight];
                     if (new_weight > best[i]){
-                        best[i] = new_weight;
+                        best[i] = new_weight; //Индекс i — текущая вместимость рюкзака (от 0 до W)
+
+                        //Значение best[i] — максимальный вес, который можно набрать при вместимости i
                     }
                 }
             }
